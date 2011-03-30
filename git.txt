@@ -1,0 +1,35 @@
+Comandos git:
+
+
+init: Inicializa un repositorio vacio. Ej: git init
+
+commit: Confirma los cambios realizados en el repositorio. Ej: git commit -am "Commit inicial"
+
+status: Verifica el estado actual del directorio de trabajo en relacion al estado del repositorio. Ej: git status
+
+diff: Encuentra las diferencias en el contenido de los archivos en los cambios realizados localmente y el ultimo commit realizado. Ej: git diff
+
+merge: combina la rama actual con la rama cuyo nombre es pasado por parametro. Ej: git merge nueva_rama
+
+log: Permite visualizar el historial de commits realizados. Ej: git log.
+
+clone: Copia todo el contenido del repositorio ubicado en la URL pasada por parametro, asi como tambien el historial de revisiones y commits. Ej: git clone git://github.com/schacon/simplegit.git
+
+add: Agrega archivos nuevos al repositorio. Ej: git add archivo.py
+
+branch: Lista todas las ramas de desarrollo existentes, o crea una nueva si se le pasa un nombre. Usando la flag -d, borra la rama. Ej: git branch, git branch nueva_rama, git branch -d nueva_rama
+
+checkout: cambia la rama actual a la rama cuyo nombre es pasado por parametro. Ej: git checkout nueva_rama
+
+reset: Restaura un commit realizado anteriormente y anula los cambios realizados por el ultimo commit. Ej: > git reset --hard HEAD
+
+push: Envia los cambios locales al repositorio remoto. Ej: git push github master
+
+remote: Lista el nombre de los repositorios remotos con los cuales estamos trabajando. Usando add o rm se pueden crear o borrar repositorios remotos. Ej: git remote
+
+fetch: Sincroniza un repositorio local con el repositorio remoto cuyo nombre es pasado por parametro (descarga el contenido nuevo del mismo a un directorio local). Ej: git fetch github
+
+config: configura ciertos atributos globales del repositorio como nombre de usuario y e-mail. 
+	Ej: > git config --global user.name 	“nuestro-nombre-de-usuario”
+
+	> git config --global user.email “nuestro-email@nuestro-correo
